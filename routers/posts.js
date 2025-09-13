@@ -3,9 +3,6 @@ const router = express.Router()
 let posts = require('../data/posts.js')
 const postsController = require('../controllers/postsController.js')
 
-//home
-router.get('/', postsController.home)
-
 //index
 router.get('/api/posts/', postsController.index)
 

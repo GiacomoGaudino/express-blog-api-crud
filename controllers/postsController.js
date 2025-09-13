@@ -1,9 +1,5 @@
 let posts = require('../data/posts.js')
 
-function home(req, res) {
-    res.send('Welcome to the posts server')
-}
-
 function index(req, res) {
     let filterPosts = posts
     const { tags } = req.query;
@@ -101,4 +97,4 @@ function destroy(req, res) {
     res.send(posts)
 }
 
-module.exports = { home, index, show, store, update, modify, destroy }
+module.exports = { index, show, store, update, modify, destroy }

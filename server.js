@@ -10,5 +10,9 @@ app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`)
 })
 
+app.get('/', (req, res) => {
+    res.json('Welcome to Posts server')
+})
+
 app.use('/', postRouter)
 
